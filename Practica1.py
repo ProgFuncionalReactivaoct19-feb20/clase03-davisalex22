@@ -8,17 +8,14 @@ Autor: @davisalex22
 #  filtrar todas aquellas que sean palindromas
 
 
-palabras = ["oro", "pais", "ojo", "oso", "radar", "sol", "seres"]    
+# Declaracion de cadena
+
+palabras = ["oro", "pais", "ojo", "oso", "radar", "sol", "seres"]
+
+# Uso de función lambda y filter
+
 resultado = filter(lambda x: "".join(reversed(x)) == x, palabras)
 
-print(resultado)
+# Presentacion de resultados por pantalla
 
-print(list(resultado)) 
-
-
-
-
-
-
-
-
+print(list(resultado))
